@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es2020", // Versão do ECMAScript de destino para melhor suporte ao async/await
+    "module": "commonjs", // Sistema de módulos comum no Node.js
+    "lib": [
+      "es2020"
+    ], // Bibliotecas padrão do ECMAScript
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": false, // Emitir arquivos de saída (importante para backend)
+    "esModuleInterop": true,
+    "moduleResolution": "node", // Resolução de módulos estilo Node.js
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "outDir": "./dist", // Diretório de saída para os arquivos compilados
+    "rootDir": "./src", // Diretório raiz contendo os arquivos TypeScript
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.ts"
+  ], // Incluir todos os arquivos TypeScript na pasta src
+  "exclude": [
+    "node_modules",
+    "dist"
+  ] // Excluir node_modules e a pasta de saída
+}

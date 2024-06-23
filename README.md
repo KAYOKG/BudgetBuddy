@@ -107,7 +107,6 @@ backend/
 └── nest-cli.json # Configurações do CLI do NestJS
 ```
 
-
 ### Créditos
 
 - Beneti
